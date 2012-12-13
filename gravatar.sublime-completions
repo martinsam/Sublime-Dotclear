@@ -1,0 +1,11 @@
+{
+	"scope": "text.html",
+	"completions":
+	[
+		/* Breadcrumb plugin */
+		{ "trigger":	"tpl:EntryAuthorGravatar",
+			"contents": "{{tpl:EntryAuthorGravatar}}"},
+		{ "trigger":	"tpl:CommentAuthorGravatar",
+			"contents": "{{tpl:CommentAuthorGravatar}}"}
+	]
+}

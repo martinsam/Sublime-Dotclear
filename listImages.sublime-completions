@@ -1,0 +1,26 @@
+{
+	"scope": "text.html",
+	"completions":
+	[
+		/* listImages plugin */
+		{ "trigger":	"tpl:EntryImages",
+			"contents": "{{tpl:EntryImages${1: size=\"${2:t}\"}${3: html_tag=\"${4:span}\"}${5: link=\"${6:image}\"}${7: exif=\"1\"}${8: legend=\"${9:none}\"}${10: bubble=\"${11:image}\"}${12: from=\"${13:full}\"}${14: start=\"${15:1}\"}${16: length=\"${17:0}\"}${18: class=\"${19:css_class}\"}${20: alt=\"${21:inherit}\"}${22: img_dim=\"${23:none}\"}}}"},
+
+		/* listImages Widget */
+		{ "trigger":	"tpl:WidgetEntryImages",
+			"contents":	"<tpl:Widget id=\"EntryImages\">\n\t<setting name=\"title\">${1:title}</setting>\n\t<setting name=\"limit\">${2:0}</setting>\n\t<setting name=\"category\">$3</setting>\n\t<setting name=\"selected\">${4:1}</setting>\n\t<setting name=\"homeonly\">${5:0}</setting>\n\t<setting name=\"size\">${6:t}</setting>\n\t<setting name=\"html_tag\">${7:span}</setting>\n\t<setting name=\"link\">${8:image}</setting>\n\t<setting name=\"from\">${9:full}</setting>\n\t<setting name=\"legend\">${10:none}</setting>\n\t<setting name=\"bubble\">${11:image}</setting>\n\t<setting name=\"class\">${12:css_class}</setting>\n\t<setting name=\"alt\">${13:inherit}</setting>\n\t<setting name=\"img_dim\">${14:none}</setting>\n\t<setting name=\"start\">${15:1}</setting>\n\t<setting name=\"length\">${16:0}</setting>\n</tpl:Widget>"},
+
+		/* Templates attributes */
+		{ "trigger":	"size",					"contents": "size=\"${0:t}\""},
+		{ "trigger":	"html_tag",				"contents": "html_tag=\"${0:span}\""},
+		{ "trigger":	"link",					"contents": "link=\"${0:image}\""},
+		{ "trigger":	"exif",					"contents": "exif=\"1\""},
+		{ "trigger":	"legend",				"contents": "legend=\"${0:none}\""},
+		{ "trigger":	"bubble",				"contents": "bubble=\"${0:image}\""},
+		{ "trigger":	"from",					"contents": "from=\"${0:full}\""},
+		{ "trigger":	"start",				"contents": "start=\"${0:1}\""},
+		{ "trigger":	"length",				"contents": "length=\"${0:0}\""},
+		{ "trigger":	"alt",					"contents": "alt=\"${0:inherit}\""},
+		{ "trigger":	"img_dim",				"contents": "img_dim=\"${0:none}\""}
+	]
+}

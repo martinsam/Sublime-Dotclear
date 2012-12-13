@@ -1,0 +1,37 @@
+{
+	"scope": "text.html",
+	"completions":
+	[
+		/* ContactMe plugin */
+		{ "trigger":	"tpl:ContactMeURL",
+			"contents": "{{tpl:ContactMeURL}}"},
+		{ "trigger":	"tpl:ContactMeIf",
+			"contents":	"<tpl:ContactMeIf${1: sent=\"1\"}${2: error=\"1\"}${3: operator=\"${4:and}\"}>\n\t$0\n</tpl:ContactMeIf>"},
+		{ "trigger":	"tpl:ContactMePageTitle",
+			"contents": "{{tpl:ContactMePageTitle}}"},
+		{ "trigger":	"tpl:ContactMeFormCaption",
+			"contents": "{{tpl:ContactMeFormCaption}}"},
+		{ "trigger":	"tpl:ContactMeMsgSuccess",
+			"contents": "{{tpl:ContactMeMsgSuccess}}"},
+		{ "trigger":	"tpl:ContactMeMsgError",
+			"contents": "{{tpl:ContactMeMsgError}}"},
+		{ "trigger":	"tpl:ContactMeName",
+			"contents": "{{tpl:ContactMeName}}"},
+		{ "trigger":	"tpl:ContactMeEmail",
+			"contents": "{{tpl:ContactMeEmail}}"},
+		{ "trigger":	"tpl:ContactMeSite",
+			"contents": "{{tpl:ContactMeSite}}"},
+		{ "trigger":	"tpl:ContactMeSubject",
+			"contents": "{{tpl:ContactMeSubject}}"},
+		{ "trigger":	"tpl:ContactMeMessage",
+			"contents": "{{tpl:ContactMeMessage}}"},
+
+		/* ContactMe Widget */
+		{ "trigger":	"tpl:WidgetContactMe",
+			"contents":	"<tpl:Widget id=\"contactMe\">\n\t<setting name=\"title\">${1:title}</setting>\n\t<setting name=\"link_title\">${2:link_title}</setting>\n\t<setting name=\"homeonly\">${3:0}</setting>\n\t<setting name=\"class\">${4:css_class}</setting>\n</tpl:Widget>"},
+
+		/* Templates attributes */
+		{ "trigger":	"error",				"contents": "error=\"1\""},
+		{ "trigger":	"sent",					"contents": "sent=\"1\""}
+	]
+}

@@ -1,0 +1,37 @@
+{
+	"scope": "text.html",
+	"completions":
+	[
+		/* Tags plugin */
+		{ "trigger":	"tpl:Series",
+			"contents":	"<tpl:Series${1: type=\"${2:serie}\"}${3: limit=\"$4\"}${5: sortby=\"${6:count}\"}${7: order=\"${8:desc}\"}>\n\t$0\n</tpl:Series>"},
+		{ "trigger":	"tpl:SeriesHeader",
+			"contents":	"<tpl:SeriesHeader>\n\t$0\n</tpl:SeriesHeader>"},
+		{ "trigger":	"tpl:SeriesFooter",
+			"contents":	"<tpl:SeriesFooter>\n\t$0\n</tpl:SeriesFooter>"},
+		{ "trigger":	"tpl:EntrySeries",
+			"contents":	"<tpl:EntrySeries${1: type=\"${2:tag}\"}${3: sortby=\"${4:count}\"}${5: order=\"${6:desc}\"}>\n\t$0\n</tpl:EntrySeries>"},
+		{ "trigger":	"tpl:SerieID",
+			"contents":	"{{tpl:SerieID}}"},
+		{ "trigger":	"tpl:SeriePercent",
+			"contents":	"{{tpl:SeriePercent}}"},
+		{ "trigger":	"tpl:SerieRoundPercent",
+			"contents":	"{{tpl:SerieRoundPercent}}"},
+		{ "trigger":	"tpl:SerieURL",
+			"contents":	"{{tpl:SerieURL}}"},
+		{ "trigger":	"tpl:SerieCloudURL",
+			"contents":	"{{tpl:SerieCloudURL}}"},
+		{ "trigger":	"tpl:SerieFeedURL",
+			"contents":	"{{tpl:SerieFeedURL${1: type=\"${2:rss2}\"}}}"},
+		{ "trigger":	"tpl:SerieEntriesList",
+			"contents":	"{{tpl:SerieEntriesList${1: include_current=\"${2:std}\"}}}"},
+
+		/* Widgets */
+		{ "trigger":	"tpl:WidgetTags",
+			"contents":	"<tpl:Widget id=\"tags\">\n\t<setting name=\"title\">${1:title}</setting>\n\t<setting name=\"limit\">${2:20}</setting>\n\t<setting name=\"sortby\">${3:meta_id_lower}</setting>\n\t<setting name=\"orderby\">${4:asc}</setting>\n\t<setting name=\"allserieslinktitle\">$5</setting>\n\t<setting name=\"homeonly\">${6:0}</setting>\n\t<setting name=\"class\">${7:css_class}</setting>\n</tpl:Widget>"},
+
+		/* Templates attributes */
+		{ "trigger":	"include_current",		"contents": "include_current=\"${0:std}\""},
+		{ "trigger":	"type",					"contents": "type=\"${0:serie}\""}
+	]
+}

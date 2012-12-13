@@ -1,0 +1,12 @@
+{
+	"scope": "text.html",
+	"completions":
+	[
+		/* Breadcrumb plugin */
+		{ "trigger":	"tpl:Breadcrumb",
+			"contents": "{{tpl:Breadcrumb${1: separator=\"${2: &rsaquo; }\"}}}"},
+
+		/* Templates attributes */
+		{ "trigger":	"separator",				"contents": "separator=\"${0: &rsaquo; }\""}
+	]
+}
