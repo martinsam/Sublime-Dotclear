@@ -27,8 +27,8 @@
 			"contents":	"{{tpl:SerieEntriesList${1: include_current=\"${2:std}\"}}}"},
 
 		/* Widgets */
-		{ "trigger":	"tpl:WidgetTags",
-			"contents":	"<tpl:Widget id=\"tags\">\n\t<setting name=\"title\">${1:title}</setting>\n\t<setting name=\"limit\">${2:20}</setting>\n\t<setting name=\"sortby\">${3:meta_id_lower}</setting>\n\t<setting name=\"orderby\">${4:asc}</setting>\n\t<setting name=\"allserieslinktitle\">$5</setting>\n\t<setting name=\"homeonly\">${6:0}</setting>\n\t<setting name=\"class\">${7:css_class}</setting>\n</tpl:Widget>"},
+		{ "trigger":	"tpl:WidgetSeries",
+			"contents":	"<tpl:Widget id=\"series\">\n\t<setting name=\"title\">${1:title}</setting>\n\t<setting name=\"limit\">${2:20}</setting>\n\t<setting name=\"sortby\">${3:meta_id_lower}</setting>\n\t<setting name=\"orderby\">${4:asc}</setting>\n\t<setting name=\"allserieslinktitle\">$5</setting>\n\t<setting name=\"homeonly\">${6:0}</setting>\n\t<setting name=\"content_only\">${7:0}</setting>\n\t<setting name=\"class\">${8:css_class}</setting>\n</tpl:Widget>"},
 
 		/* Templates attributes */
 		{ "trigger":	"include_current",		"contents": "include_current=\"${0:std}\""},
