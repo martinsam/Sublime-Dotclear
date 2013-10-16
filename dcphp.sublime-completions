@@ -1,0 +1,35 @@
+{
+	"scope": "source.php",
+	"completions":
+	[
+		{ "trigger":	"breadcrumb",
+			"contents":	"echo dcPage::breadcrumb(array(\n\thtml::escapeHTML(\\$core->blog->name) => '',\n\t__('${1:Page title}') => ''\n)).dcPage::notices();"
+		},
+		{ "trigger":	"addnotice",
+			"contents":	"dcPage::addSuccessNotice(__('${1:Notice title}'));"
+		},
+		{ "trigger":	"addwarning",
+			"contents":	"dcPage::addWarningNotice(__('${1:Notice title}'));"
+		},
+		{ "trigger":	"adderror",
+			"contents":	"dcPage::addErrorNotice(__('${1:Notice title}'));"
+		},
+		{ "trigger":	"tplvalue",
+			"contents":	"\\$core->tpl->addValue('${1:ValueName}',array('${2:Class}','${3:Method}'));"
+		},
+		{ "trigger":	"tplblock",
+			"contents":	"\\$core->tpl->addBlock('${1:BlockName}',array('${2:Class}','${3:Method}'));"
+		},
+		{ "trigger":	"dcclass",
+			"contents":	"/**\n@ingroup DC_CORE\n@nosubgrouping\n@brief Class description goes here\n\n*/\nclass ${1:ClassName}\n{\n	/** @var dcCore dcCore instance */\n	protected \\$core;\n\n	/**\n	Inits $1 object\n	\n	@param	core		<b>dcCore</b>		Dotclear core reference\n	*/\n	public function __construct(\\$core)\n	{\n		\\$this->core = \\$core;\n	}\n}\n"
+		},
+		{ "trigger":	"_adminphp",
+			"contents":	"# -- BEGIN LICENSE BLOCK ---------------------------------------\n#\n# This file is part of Dotclear 2.\n#\n# Copyright (c) Olivier Meunier & Association Dotclear\n# Licensed under the GPL version 2.0 license.\n# See LICENSE file or\n# http://www.gnu.org/licenses/old-licenses/gpl-2.0.html\n#\n# -- END LICENSE BLOCK -----------------------------------------\nif (!defined('DC_CONTEXT_ADMIN')) { return; }\n"
+		},
+		{ "trigger":	"_publicphp",
+			"contents":	"# -- BEGIN LICENSE BLOCK ---------------------------------------\n#\n# This file is part of Dotclear 2.\n#\n# Copyright (c) Olivier Meunier & Association Dotclear\n# Licensed under the GPL version 2.0 license.\n# See LICENSE file or\n# http://www.gnu.org/licenses/old-licenses/gpl-2.0.html\n#\n# -- END LICENSE BLOCK -----------------------------------------\nif (!defined('DC_RC_PATH')) { return; }\n"
+		}
+
+
+	]
+}
