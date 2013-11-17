@@ -11,6 +11,8 @@
 		/* Loops test tags */
 		{ "trigger":	"tpl:LoopPosition",
 			"contents": "<tpl:LoopPosition${1: start=\"${2:0}\"}${3: length=\"${4:1}\"}${5: even=\"${6:1}\"}>\n\t$0\n</tpl:LoopPosition>"},
+		{ "trigger":	"tpl:LoopIndex",
+			"contents":	"{{tpl:LoopIndex}}"},
 
 		/* Archives */
 		{ "trigger":	"tpl:Archives",
@@ -53,6 +55,8 @@
 			"contents":	"{{tpl:BlogLanguage}}"},
 		{ "trigger":	"tpl:BlogThemeURL",
 			"contents":	"{{tpl:BlogThemeURL}}"},
+		{ "trigger":	"tpl:BlogParentThemeURL",
+			"contents":	"{{tpl:BlogParentThemeURL}}"},
 		{ "trigger":	"tpl:BlogPublicURL",
 			"contents":	"{{tpl:BlogPublicURL}}"},
 		{ "trigger":	"tpl:BlogUpdateDate",
@@ -198,7 +202,7 @@
 
 		/* Comments */
 		{ "trigger":	"tpl:Comments",
-			"contents":	"<tpl:Comments${1: with_pings=\"${2:1}\"}${3: lastn=\"$4\"}${5: no_context=\"${6:1}\"}${7: sort_by=\"${8:date}\"}${9: order=\"${10:desc}\"}${11: age=\"${12:max_age}\"}>\n\t$0\n</tpl:Comments>"},		
+			"contents":	"<tpl:Comments${1: with_pings=\"${2:1}\"}${3: lastn=\"$4\"}${5: no_context=\"${6:1}\"}${7: sort_by=\"${8:date}\"}${9: order=\"${10:desc}\"}${11: age=\"${12:max_age}\"}>\n\t$0\n</tpl:Comments>"},
 		{ "trigger":	"tpl:CommentAuthor",
 			"contents":	"{{tpl:CommentAuthor}}"},
 		{ "trigger":	"tpl:CommentAuthorDomain",
@@ -356,7 +360,7 @@
 
 		/* SimpleMenu plugin */
 		{ "trigger":	"tpl:SimpleMenu",
-			"contents":	"{{tpl:SimpleMenu}}"},
+			"contents":	"{{tpl:SimpleMenu${1: id=\"${2:id}\"}${3: class=\"${4:class}\"}${5: description=\"${6:span}\"}}}"},
 
 		/* Tags plugin */
 		{ "trigger":	"tpl:Tags",
@@ -441,6 +445,7 @@
 		{ "trigger":	"creadt",				"contents": "creadt=\"1\""},
 		{ "trigger":	"current_mode",			"contents": "current_mode=\"${0:mode}\""},
 		{ "trigger":	"current_tpl",			"contents": "current_tpl=\"${0:tpl}\""},
+		{ "trigger":	"description",			"contents": "description=\"${0:span}\""},
 		{ "trigger":	"disable",				"contents": "disable=\"$0\""},
 		{ "trigger":	"even",					"contents": "even=\"${0:1}\""},
 		{ "trigger":	"end",					"contents": "end=\"${0:1}\""},
@@ -457,6 +462,7 @@
 		{ "trigger":	"has_tag",				"contents": "has_tag=\"${0:tag}\""},
 		{ "trigger":	"has_thumb",			"contents": "has_thumb=\"${0:1}\""},
 		{ "trigger":	"has_tpl",				"contents": "has_tpl=\"${0:tpl}\""},
+		{ "trigger":	"id",					"contents": "id=\"${0:id}\""},
 		{ "trigger":	"ignore_pagination",	"contents": "ignore_pagination=\"${0:1}\""},
 		{ "trigger":	"iso8601",				"contents": "iso8601=\"1\""},
 		{ "trigger":	"is_flv",				"contents": "is_flv=\"${0:1}\""},

@@ -2,7 +2,7 @@
 	"scope": "text.html",
 	"completions":
 	[
-		/* Tags plugin */
+		/* Series plugin */
 		{ "trigger":	"tpl:Series",
 			"contents":	"<tpl:Series${1: type=\"${2:serie}\"}${3: limit=\"$4\"}${5: sortby=\"${6:count}\"}${7: order=\"${8:desc}\"}>\n\t$0\n</tpl:Series>"},
 		{ "trigger":	"tpl:SeriesHeader",
