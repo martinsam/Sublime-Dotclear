@@ -10,7 +10,7 @@
 
 		/* Loops test tags */
 		{ "trigger":	"tpl:LoopPosition",
-			"contents": "<tpl:LoopPosition${1: start=\"${2:0}\"}${3: length=\"${4:1}\"}${5: even=\"${6:1}\"}>\n\t$0\n</tpl:LoopPosition>"},
+			"contents": "<tpl:LoopPosition${1: start=\"${2:0}\"}${3: length=\"${4:1}\"}${5: even=\"${6:1}\"}${7: modulo=\"${8:1}\"}>\n\t$0\n</tpl:LoopPosition>"},
 		{ "trigger":	"tpl:LoopIndex",
 			"contents":	"{{tpl:LoopIndex}}"},
 
@@ -251,6 +251,8 @@
 			"contents":	"{{tpl:CommentHelp}}"},
 		{ "trigger":	"tpl:IfCommentPreview",
 			"contents":	"<tpl:IfCommentPreview>\n\t$0\n</tpl:IfCommentPreview>"},
+		{ "trigger":	"tpl:IfCommentPreviewOptional",
+			"contents":	"<tpl:IfCommentPreviewOptional>\n\t$0\n</tpl:IfCommentPreviewOptional>"},
 		{ "trigger":	"tpl:CommentPreviewName",
 			"contents":	"{{tpl:CommentPreviewName}}"},
 		{ "trigger":	"tpl:CommentPreviewEmail",
@@ -475,6 +477,7 @@
 		{ "trigger":	"length",				"contents": "length=\"$0\""},
 		{ "trigger":	"level",				"contents": "level=\"${0:1}\""},
 		{ "trigger":	"limit",				"contents": "limit=\"$0\""},
+		{ "trigger":	"modulo",				"contents": "modulo=\"$0\""},
 		{ "trigger":	"more",					"contents": "more=\"${0:%s comments}\""},
 		{ "trigger":	"more",					"contents": "more=\"${0:%s trackbacks}\""},
 		{ "trigger":	"name",					"contents": "name=\"${0:name}\""},
