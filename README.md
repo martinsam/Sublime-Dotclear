@@ -1,4 +1,6 @@
 Plugin Sublime-Dotclear pour Sublime Text 2/3
+#Description
+Le plugin permet d'enrichir l'autocomplétion des tags propres à dotclear. Exemple tpl:include, tpl:BlogFeedUrl.
 
 #Installation
 
